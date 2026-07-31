@@ -69,8 +69,14 @@ function ResultViewPage() {
 
   const Footer = (
   <div style={{ marginTop: "20px", display: "flex", justifyContent: "space-between" }}>
-    <p>📍 موقعنا: مستشفى الخوجلابي - ربك</p>
-    <p>📞 للتواصل والاستفسار: 0124250669</p>
+    <div>
+      <p>اسم الطبيب:</p>
+      <p>Ali Mohammed Abd-algader Al-faki</p>
+    </div>
+    <div>
+      <p>📍 موقعنا: مستشفى الخوجلابي - ربك</p>
+      <p>📞 للتواصل والاستفسار: 0124250669</p>
+    </div>
   </div>
   );
 

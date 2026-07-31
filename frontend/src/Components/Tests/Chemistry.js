@@ -3,58 +3,53 @@ import { useState } from "react";
 const chemistryTests = [
   { test: "اختر اسم الفحص", unit: "", range: "" },
   // 🔹 السكر
-  { test: "FBG", unit: "mg/dL", range: "70-110" },
+  { test: "FBG", unit: "mg/dL", range: "70-99" },
   { test: "RBG", unit: "mg/dL", range: "70-140" },
   { test: "PPBS", unit: "mg/dL", range: "70-140" },
 
   // 🔹 وظائف الكلى RFT
-  { test: "Urea", unit: "mg/dL", range: "15-40" },
-  { test: "Blood Urea Nitrogen(BUN)", unit: "", range: "" },
-  { test: "Creatinine", unit: "mg/dL", range: "0.6-1.2" },
-  { test: "Uric Acid", unit: "mg/dL", range: "3.5-7.2" },
+  { test: "Urea", unit: "mg/dL", range: "15-45" },
+  { test: "Blood Urea Nitrogen(BUN)", unit: "mg/dL", range: "7-20" },
+  { test: "Creatinine", unit: "mg/dL", range: "Male: 0.7-1.4, Female: 0.6-1.2" },
+  { test: "Uric Acid", unit: "mg/dL", range: "Male: 3.5-7.2, Femle: 2.6-6.0" },
 
   // 🔹 وظائف الكبد LFT
   { test: "ALT", unit: "U/L", range: "7-56" },
   { test: "AST", unit: "U/L", range: "10-40" },
   { test: "ALP", unit: "U/L", range: "44-147" },
-  { test: "GGT", unit: "U/L", range: "9-48" },
-  { test: "Total Protein", unit: "g/dL", range: "6-8" },
+  { test: "GGT", unit: "U/L", range: "Male: 8-61, Female: 5-36" },
+  { test: "Total Protein", unit: "g/dL", range: "6.4-8.3" },
   { test: "Albumin", unit: "g/dL", range: "3.5-5.0" },
-  { test: "Globulin", unit: "", range: "" },
-  { test: "ALB/Globulin ratio", unit: "ratio", range: "1.0-2.5" },
-  { test: "Bilirubin Total", unit: "mg/dL", range: "0.1-1.2" },
-  { test: "Bilirubin Direct", unit: "mg/dL", range: "0-0.3" },
-  { test: "Bilirubin Indirect", unit: "mg/dL", range: "0.2-0.8" },
+  { test: "Globulin", unit: "g/dL", range: "2.0-3.5" },
+  { test: "ALB/Globulin ratio", unit: "ratio", range: "1.0-2.2" },
+  { test: "Bilirubin Total", unit: "mg/dL", range: "0.3-1.2" },
+  { test: "Bilirubin Direct", unit: "mg/dL", range: "0.0-0.3" },
+  { test: "Bilirubin Indirect", unit: "mg/dL", range: "0.2-0.9" },
 
   // 🔹 الدهون Lipids
   { test: "Total Cholesterol", unit: "mg/dL", range: "<200" },
   { test: "Triglycerides", unit: "mg/dL", range: "<150" },
-  { test: "HDL", unit: "mg/dL", range: ">40" },
+  { test: "HDL", unit: "mg/dL", range: "Male: >40, Female: >50" },
   { test: "LDL", unit: "mg/dL", range: "<100" },
-  { test: "VLDL", unit: "mg/dL", range: "" },
+  { test: "VLDL", unit: "mg/dL", range: "5-40" },
 
   // 🔹 العضلات والقلب
-  { test: "Troponin I", unit: "", range: "" },
-  { test: "Troponin T", unit: "", range: "" },
   { test: "CK", unit: "U/L", range: "20-200" },
-  { test: "CK-MB", unit: "U/L", range: "" },
+  { test: "CK-MB", unit: "ng/mL", range: "0-5" },
   { test: "LDH", unit: "U/L", range: "140-280" },
 
     // 🔹 الكهارل Electrolytes
   { test: "Na+", unit: "mmol/L", range: "135-145" },
   { test: "K+", unit: "mmol/L", range: "3.5-5.0" },
-  { test: "Cl", unit: "mmol/L", range: "95-105" },
+  { test: "Cl", unit: "mmol/L", range: "95-106" },
   { test: "Ca+", unit: "mg/dL", range: "8.5-10.5" },
-  { test: "Phosphorus(PHO)", unit: "", range: "" },
+  { test: "Phosphorus(PHO)", unit: "mg/dL", range: "2.5-4.5" },
   { test: "Mg+", unit: "mg/dL", range: "1.7-2.2" },
 
   // 🔹 فحوصات نقص الحديد
-  { test: "Iron", unit: "µg/dL", range: "60-170" },
-  { test: "Ferritin", unit: "ng/mL", range: "20-200" },
-  { test: "TIBC", unit: "µg/dL", range: "240-450" },
-
-  //
-  { test: "Vitamin B12", unit: "", range: "" },
+  { test: "Iron", unit: "µg/dL", range: "Male: 65-175, Female: 50-170" },
+  { test: "Ferritin", unit: "ng/mL", range: "Male: 30-400, Female: 15-150" },
+  { test: "TIBC", unit: "µg/dL", range: "250-450" }
 
 ];
 

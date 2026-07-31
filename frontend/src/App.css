@@ -95,7 +95,7 @@ padding:5px;
     left: 0;
     width: 100%;
   }
-  .print-btn, .close-btn, .navbar, .hidden, .btn {
+  .print-btn, .close-btn, .navbar, .hidden, .btn, .quick-buttons {
     display: none !important;
   }
 

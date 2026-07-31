@@ -166,7 +166,7 @@ tbody tr:hover{
 .patient-info-result{
     display:flex;
     flex-wrap:wrap;
-    gap:15px;
+    gap:2px;
     justify-content:space-between;
 }
 

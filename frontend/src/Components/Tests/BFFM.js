@@ -1,3 +1,4 @@
+
 function BFFM({ value = "", onChange, readOnly }) {
 
   return (
@@ -10,9 +11,16 @@ function BFFM({ value = "", onChange, readOnly }) {
         type="text"
         value={value}
         readOnly={readOnly}
-        onChange={(e) => onChange && onChange(e.target.value)}
+        onChange={(e) => onChange(e.target.value)}
         style={{width: "200px"}}
       />
+
+      {!readOnly && (<div className="quick-buttons">
+        <button style={{marginRight:"5px", marginLeft:"5px"}} 
+        type="button" className="btn" onClick={() => onChange("Positive")}>Positive</button>
+
+        <button type="button" className="btn" onClick={() => onChange("Negative")}>Negative</button>
+      </div>)}
 
     </div>
   );
